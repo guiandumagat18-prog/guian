@@ -1,65 +1,191 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-
-<body>
-    <h1 class="text-3xl font-bold underline text-red-700">Guian Mark Dumagat</h1>
-
-    <button id="switch">Switch</button>
-    <header>
-        <nav>
-            <span>@_heyiannx</span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="projects"> 
-            <h2 class="projects">My Projects</h2>
-            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
+<body class="bg-gray-500 text-white">
+<header class="bg-black border-b-2 border-white rounded-[10px]">
+    <nav class="max-w-[1000px] mx-auto
+                px-[25px] py-[20px]
+                flex justify-between items-center
+                max-[600px]:flex-col
+                max-[600px]:gap-[15px]">
+        <div>
+            <h1 class="text-2xl font-bold">
+                Guian Mark Dumagat
+            </h1>
+            <p class="text-sm text-gray-500">
+                @_heyiannx
             </p>
-        </section>
+         </div>
+        <ul class="flex gap-[25px] list-none
+                   max-[600px]:flex-col
+                   max-[600px]:text-center">
+            <li>
+                <a href="#projects"
+                   class="hover:bg-pink-500
+                          rounded-[10px]
+                          hover:text-white
+                          px-[10px] py-[5px]">
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="#services"
+                   class="hover:bg-pink-500
+                          rounded-[10px]
+                          hover:text-white
+                          px-[10px] py-[5px]">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="#contact"
+                   class="hover:bg-pink-500
+                          rounded-[10px]
+                          hover:text-white
+                          px-[10px] py-[5px]">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section id="projects"
+          class="border-t-2 border-black bg-gray text-white">
+          <div class="m-[40px] bg-red-500 rounded-[10px]">
+    <div class="max-w-[1000px] mx-auto
+                px-[25px] py-[50px]">
+        <div class="flex gap-[40px]
+                    max-[600px]:flex-col">
+            <div class="min-w-[80px]">
+                <p class="text-s text-white-500 mt-[5px]">
+                    WORK
+                </p>
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold">
+                    My Projects
+                </h2>
+                <p class="text-white-600 mt-[10px]">
+                    Personal portfolio, payroll system,
+                    company website, startup website,
+                    and compliance monitoring system.
+                </p>  
+            </div>
+        </div>
+</section>
+<section id="services"
+          class="border-t-2 border-black bg-lightgray text-white">
+          <div class="m-[40px] bg-red-500 rounded-[10px]">
+    <div class="max-w-[1000px] mx-auto
+                px-[25px] py-[50px]">
+        <div class="flex gap-[40px]
+                    max-[600px]:flex-col">
+            <div class="min-w-[80px]">
+                <p class="text-s text-white-500 mt-[5px]">
+                    SKILLS
+                </p>
+            </div>
+            <div class="flex-1">
 
-        <section id="services">
-            <h2 class="services">My Services</h2>
-            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
-                Analyst</p>
-        </section>
+                <h2 class="text-3xl font-bold">
+                    My Services
+                </h2>
 
-        <section id="contact">
-            <h2 class="contact">Let's build together!</h2>
-            <form action="#">
-                <!-- Name -->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <!-- Email -->
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-
-                <!-- Message -->
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
-
-                <!-- Submit -->
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- <script src="script.js"></script> -->
+                <p class="text-white-600 mt-[10px]">
+                    Services and skills that I can provide.
+                </p>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section id="contact"
+         class="border-t-2 border-black bg-gray text-white">
+         <div class="m-[40px] bg-red-500 rounded-[10px]">
+    <div class="max-w-[1000px] mx-auto
+                px-[25px] py-[60px]">
+        <div class="flex gap-[40px]
+                    max-[600px]:flex-col">
+            <div class="min-w-[80px]">
+                <p class="text-s text-white-500 mt-[10px]">
+                    CONTACT ME
+                </p>
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold">
+                    Let's build together!
+                </h2>
+             <p class="text-white-400 mt-[10px]">
+                    Have an idea or project?
+                    Send me a message.
+                </p>
+                <form
+                    action="#"
+                    class="flex flex-col gap-[15px]
+                           max-w-[600px]
+                           mt-[30px]">
+                    <label for="name">
+                        Name
+                    </label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        class="bg-white text-black
+                               p-[12px]
+                               border-2 border-white
+                               outline-none
+                               rounded-[20px]">
+                    <label for="email">
+                        Email
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="bg-white text-black
+                               p-[12px]
+                               border-2 border-white
+                               outline-none
+                               rounded-[20px]">
+                    <label for="message">
+                        Message
+                    </label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        class="bg-white text-black
+                               p-[12px]
+                               border-2 border-white
+                               outline-none
+                               resize-none
+                               rounded-[20px]"></textarea>
+                    <button
+                        type="submit"
+                        class="bg-gray-500
+                               text-white
+                               px-[25px] py-[12px]
+                               hover:bg-white
+                               hover:text-black
+                               rounded-[20px]">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+          </div>
+       </div>
+    </div>
+</section>
 </body>
-
 </html>
